@@ -4,6 +4,7 @@ export default {
     Methods(Vue, options);
   }
 }
+// eslint-disable-next-line no-unused-vars
 const Methods = (Vue, options) => {
   /**
    * 点击事件 防抖指令
@@ -13,6 +14,7 @@ const Methods = (Vue, options) => {
   Vue.directive('debounce', {
     // el 指令所绑定的元素，可以用来直接操作 DOM 。
     inserted: function (el, binding, vnode) {
+      // eslint-disable-next-line no-unused-vars
       let { formatEl, formatBinding, formatVnode } = formatDebounceThrottleParams('debounce', el, binding, vnode);
       formatEl["timeCall"] = null;
       switch (el.type) {
@@ -57,6 +59,7 @@ const Methods = (Vue, options) => {
   Vue.directive('throttle', {
     // el 指令所绑定的元素，可以用来直接操作 DOM 。
     inserted: function (el, binding, vnode) {
+      // eslint-disable-next-line no-unused-vars
       let { formatEl, formatBinding, formatVnode } = formatDebounceThrottleParams('throttle', el, binding, vnode);
       formatEl["timeCall"] = null;
       switch (formatEl.type) {
