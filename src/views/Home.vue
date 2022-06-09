@@ -12,10 +12,10 @@
       :throttleTime="1000"
       :throttleType="'click'"
     >节流测试</button>
-
+123
   </div>
 
-  
+
 </template>
 
 <script>
