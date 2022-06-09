@@ -7,7 +7,6 @@
     >防抖测试</button>
     <br />
     <br />
-    
     <button
       v-throttle:throttleTest="[4, 5, 6]"
       :throttleTime="1000"
